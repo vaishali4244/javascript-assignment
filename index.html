@@ -10,23 +10,29 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="content-img">
+    <main class="container">
+
+        <!-- IMAGE SECTION -->
+        <section class="content-img">
             <img class="main-img" src="./images/Rectangle 4.png" alt="">
             <div class="all-img">
-                <img src="./images/Rectangle 6.png" alt="" class="below-img">
-                <img src="./images/Rectangle 5.png" alt="" class="below-img">
-                <img src="./images/Group 4.png" alt="" class="below-img">
-                <img src="./images/Rectangle 8.png" alt="" class="below-img">
+                <img src="./images/Rectangle 6.png" alt="sample" class="below-img">
+                <img src="./images/Rectangle 5.png" alt="sample" class="below-img">
+                <img src="./images/Group 4.png" alt="sample" class="below-img">
+                <img src="./images/Rectangle 8.png" alt="sample" class="below-img">
             </div>
-        </div>
-        <div class="content">
+        </section>
+
+        <!-- PRODUCT DETAILS -->
+        <section class="content">
             <div class="product-name">
                 <p id="vendor"></p>
                 <h2 id="title"></h2>
 
             </div>
             <div class="break-line"></div>
+
+            <!-- PRICE CONTENT -->
             <div class="price-content">
                 <div class="discount-amount">
                     <p id="price"></p>
@@ -35,27 +41,45 @@
                 <p id="comparePrice"></p>
             </div>
             <div class="break-line"></div>
+
+            <!-- COLOR OPTIONS -->
             <p class="text size-title">Choose a Color</p>
-         <div class="color-choice">
-            <button class="color-btn pointer" style="background-color: #ECDECC;"><img src="./images/Vector (Stroke).png" alt="yellow"></button>
-            <button class="color-btn pointer" style="background-color: #BBD278;"><img src="./images/Vector (Stroke).png" alt="green"> </button>
-            <button class="color-btn pointer" style="background-color: #BBC1F8;"><img src="./images/Vector (Stroke).png" alt="blue"></button>
-            <button class="color-btn pointer" style="background-color: #FFD3F8;"><img src="./images/Vector (Stroke).png" alt="pink"></button>
-         </div>
+            <div class="color-choice">
+                <button class="color-btn pointer" style="background-color: #ECDECC;"><img
+                        src="./images/Vector (Stroke).png" alt="yellow"></button>
+                <button class="color-btn pointer" style="background-color: #BBD278;"><img
+                        src="./images/Vector (Stroke).png" alt="green"> </button>
+                <button class="color-btn pointer" style="background-color: #BBC1F8;"><img
+                        src="./images/Vector (Stroke).png" alt="blue"></button>
+                <button class="color-btn pointer" style="background-color: #FFD3F8;"><img
+                        src="./images/Vector (Stroke).png" alt="pink"></button>
+            </div>
+
+            <!-- SIZE OPTIONS -->
             <div class="size-content">
                 <p class="size-title">Choose a Size</p>
                 <div class="size-btn">
-                    <button ><input class="pointer" type="radio" name="size" id="small">Small</button>
-                    <button ><input class="pointer" type="radio" name="size" id="medium">Medium</button>
-                    <button ><input class="pointer" type="radio" name="size" id="large">Large</button>
-                    <button >
-                        <input class="pointer" type="radio" name="size" id="extra-large">
-                        Extra Large</button>
-                    <button ><input class="pointer"type="radio" name="size" id="xxl">XXL</button>
+                    <button>
+                        <input class="pointer" type="radio" name="size" id="small">Small
+                    </button>
+                    <button>
+                        <input class="pointer" type="radio" name="size" id="medium">Medium
+                    </button>
+                    <button>
+                        <input class="pointer" type="radio" name="size" id="large">Large
+                    </button>
+                    <button>
+                        <input class="pointer" type="radio" name="size" id="extra-large">Extra Large
+                    </button>
+                    <button>
+                        <input class="pointer" type="radio" name="size" id="xxl">XXL
+                    </button>
 
                 </div>
             </div>
             <div class="break-line"></div>
+
+            <!-- CART-BOX -->
             <div class="cart-box">
                 <div class="quantity-box">
                     <p class="reduce pointer">-</p>
@@ -68,11 +92,13 @@
                 <p id='final-msg'></p>
             </div>
             <div class="break-line"></div>
-            <p id="description"></p>
-        </div>
 
-    </div>
-    
+            <!-- PRODUCT DESCRIPTION -->
+            <p id="description"></p>
+        </section>
+
+    </main>
+
     <script src="./script.js"></script>
 </body>
 
